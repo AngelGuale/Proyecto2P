@@ -222,7 +222,7 @@
             <div class="col-sm-4">
               <div class="thumbnail">
                 <div class="avatar">
-                  <a href="#" class="thumbnail bottom-15" data-toggle="modal" data-target="#upload-avatar">
+                  <a href="#" class="thumbnail bottom-15" data-toggle="modal" data-target="#upload-avatar" id="a_avatar">
                     <img src="img/face1.jpg" alt="...">
                   </a>
                   <!-- Upload new avatar bubble -->
@@ -258,7 +258,7 @@
             </div>
             <!-- Main profile info -->
             <div class="col-sm-8">
-              <h3 class="hl">Alex Smith <small>Usuario Independiente</small></h3>
+              <h3 class="hl" id="principalNombre">Alex Smith <small>Usuario Independiente</small></h3>
               <hr>
               <!-- User status update form -->
               <div class="user-status">
@@ -277,17 +277,17 @@
                 </form>
               </div>
               <div class="bottom-15">
-                <a href="#" class="btn btn-green btn-sm" data-toggle="modal" data-target="#sendemail"><i class="fa fa-envelope"></i> Enviar e-mail</a> 
-                <a href="#" class="btn btn-default btn-sm" data-toggle="modal" data-target="#sendpm"><i class="fa fa-mail-forward text-muted"></i> Enviar PM</a>
+                <a href="#" class="btn btn-green btn-sm" data-toggle="modal" data-target="#sendemail"><i class="fa fa-envelope"></i> Enviar mensaje</a> 
+<!--               <a href="#" class="btn btn-default btn-sm" data-toggle="modal" data-target="#sendpm"><i class="fa fa-mail-forward text-muted"></i> Enviar Mensaje</a>-->
                 <!-- Modal window: Send an email -->
                 <div class="modal fade" id="sendemail" tabindex="-1" role="dialog" aria-labelledby="sendemailtitle" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <img src="img/face1.jpg" alt="...">
-                        <h4 class="modal-title" id="sendemailtitle">Usuario Independiente</h4>
-                        <p class="text-muted"><i class="fa fa-envelope"></i> Nuevo Email</p>
+                        <img src="img/face1.jpg" alt="..." id="mensajeFoto">
+                        <h4 class="modal-title" id="mensajeTitulo">Usuario Independiente</h4>
+                        <p class="text-muted"><i class="fa fa-envelope"></i> Nuevo Mensaje</p>
                         <div class="clearfix"></div>
                       </div>
                       <div class="modal-body">
@@ -316,10 +316,12 @@
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         <img src="img/face1.jpg" alt="...">
                         <h4 class="modal-title" id="sendpmtitle">Usuario Independiente</h4>
-                        <p class="text-muted"><i class="fa fa-envelope"></i> Nuevo PM</p>
+<!--
+                        <p class="text-muted"><i class="fa fa-envelope"></i> Nuevo PM</p>-->
                         <div class="clearfix"></div>
+
                       </div>
-                      <div class="modal-body">
+                    <!--  <div class="modal-body">
                         <form role="form">
                           <div class="form-group">
                             <label for="message-2" class="sr-only">Mensaje</label>
@@ -329,7 +331,7 @@
                           <button type="button" class="btn btn-green" data-dismiss="modal">Enviar</button>
                         </form>
                       </div>
-                    </div><!-- /.modal-content -->
+                    --></div> /.modal-content 
                   </div><!-- /.modal-dialog -->
                 </div><!-- /.modal -->
                 <!-- End of modal window -->
@@ -337,19 +339,22 @@
             </div>
           </div>
           <!-- About Me -->
+<!--
           <div class="row">
             <div class="col-sm-12">
-              <h4 class="hl"><i class="fa fa-user"></i> About Me</h4>
+              <h4 class="hl"><i class="fa fa-user"></i> Acerca de mi</h4>
               <p class="bottom-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tortor nunc, dapibus a est sed, tempus bibendum arcu. Nullam pretium arcu in neque congue tempor. Quisque quis mauris sit amet magna fermentum tincidunt et a enim. Aliquam eu rhoncus libero, a pulvinar metus.</p>
               <hr>
             </div>
           </div>
+-->
           <!-- General Information -->
           <div class="row">
             <div class="col-sm-12">
               <h4 class="hl"><i class="fa fa-info-circle"></i> Informaci&oacute;n General</h4>
               <table class="table">
-                <tbody>
+                <tbody id="infogeneral">
+<!--
                   <tr>
                     <td class="text-muted">Cargo</td>
                     <td>Usuario Independiente</td>
@@ -362,6 +367,7 @@
                     <td class="text-muted">Ubicaci&oacute;n</td>
                     <td>Ecuador</td>
                   </tr>
+-->
                 </tbody>
               </table>
               <hr>
@@ -372,7 +378,8 @@
             <div class="col-sm-12">
               <h4 class="hl"><i class="fa fa-map-marker"></i> Informaci&oacute;n de Contacto</h4>
               <table class="table">
-                <tbody>
+                <tbody id="infocontacto">
+<!--
                   <tr>
                     <td class="text-muted">Email</td>
                     <td>example@gmail.colm</td>
@@ -381,6 +388,7 @@
                     <td class="text-muted">Sitio Web</td>
                     <td>http://www.example.com</td>
                   </tr>
+-->
                 </tbody>
               </table>
               <hr>
@@ -506,5 +514,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/scrolltopcontrol.js"></script><!-- Scroll to top javascript -->
+    <script src="js2/funcionesperfil.js"></script>
   </body>
 </html>
