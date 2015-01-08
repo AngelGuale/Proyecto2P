@@ -12,7 +12,7 @@ function mantenerID() {
          links[i].setAttribute("href",links[i].getAttribute("href")+"? id="+id);
         
     }
-   setTimeout(cargarNombreReq,1);
+   //setTimeout(cargarNombreReq,1);
 }
 function cargarNombreReq(){
 	//if(id!="000"){

@@ -1,4 +1,4 @@
-function cargarPerfil(){
+function cargarPerfil() {
 	var request=new XMLHttpRequest();
 	request.open("GET","../xml/usuarios.xml", true);
 	request.addEventListener("load", mostrarPerfil, false);
